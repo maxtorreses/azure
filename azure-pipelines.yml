@@ -1,21 +1,20 @@
 trigger:
-   - main
-   
+- main
+
 pool:
-      vmImage: "ubuntu-latest'
-      # name : 'AgentScaleSet-DevOps'
-      
-   jobs:
-   - job: job1
-     steps:
-        - script: echo Hello, $HOSTNAME
-   - job: job2
-      steps:
-        - script: echo Hello, $HOSTNAME
-   - job: job3
-      steps:
-        - script: echo Hello, $HOSTNAME
-   - job: job4
-      steps:
-        - script: echo Hello, $HOSTNAME
-        
+  # vmImage: "ubuntu-latest'
+  # name : 'AgentScaleSet-DevOps'
+
+jobs:
+- job: job1
+  steps:
+  - script: echo Hello, $HOSTNAME
+- job: job2
+  steps:
+  - script: echo Hello, $HOSTNAME
+- job: job3
+  steps:
+  - script: echo Hello, $HOSTNAME
+- job: job4
+  steps:
+  - script: echo Hello, $HOSTNAME
